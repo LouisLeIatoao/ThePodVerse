@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>AirPods</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="#" class="logo">
+                <img src="./images/logo.svg" alt="logo">
+            </a>
+            <nav class="navbar">
+                <a href="./index.html" class="active">home</a>
+                <a href="./about.html">about</a>
+                <a href="./products.html">product</a>
+                <a href="./feature.html">features</a>
+                <a href="./review.html">review</a>
+            </nav>
+        </header>
+
+        <section class="home" id="home">
+            <div class="content">
+                <div class="content-intro">
+                    <h3>Using them is just as easy.</h3>
+                    <p>After a simple one-tap setup, AirPods are automatically on and always connected. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="products">
+            <h1 class="heading">Our Products</h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="box-head">
+                        <span class="title">2nd Generation</span>
+                        <a href="#" class="name">Supreme Airpod</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/Airpod-2nd-img.svg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="price">$12,000,000.00</b>
+                            <span class="amount">Special Edition</span>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <span class="title">3rd Generation</span>
+                        <a href="#" class="name">Ultimate Airpod</a>
+                    </div>
+                    <div class="image">
+                        <img src="./images/Airpod-3nd-img.svg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="price">$100,000,000.00</b>
+                            <span class="amount">Limited Edition</span>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-head">
+                        <span class="title">Only for God</span>
+                        <a href="#" class="name">Vip Pro Airpod</a>
+                    </div>
+                    <div class="image">
+                        <img src="./images/Airpod-3nd-pro-img.svg" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <div class="info">
+                            <b class="price">$Priceless</b>
+                            <span class="amount">Only for real players</span>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#">
+                                <i class="fas fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h1 class="heading">About Us</h1>
+            <div class="row">
+                <div class="image">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                        <!-- <div class="numbertext">1 / 3</div> -->
+                        <img src="./images/airPods-play-pause-music.jpg" style="width:100%" alt="AirPods play music, make calls, get directions">
+                        <div class="text-image">Play Music, Make Calls, Get Directions</div>
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <!-- <div class="numbertext">2 / 3</div> -->
+                        <img src="./images/conversation-boost.jpg" style="width:100%" alt="AirPods conversation boost">
+                        <div class="text-image">Conversation Boost for Your Focus</div>
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <!-- <div class="numbertext">3 / 3</div> -->
+                        <img src="./images/siri-read-messages.jpg" style="width:100%" alt="AirPods read messages">
+                        <div class="text-image">Let Siri Help You Read Your Messages</div>
+                        </div>
+                    
+                        <a class="prev" onclick={plusSlides(-1)}>&#10094;</a>
+                        <a class="next" onclick={plusSlides(1)}>&#10095;</a>
+                    </div>
+                    <br>
+                    
+                    <div class="dot-container" style="text-align:center">
+                        <span class="dot" onclick={currentSlide(1)}></span>
+                        <span class="dot" onclick={currentSlide(2)}></span>
+                        <span class="dot" onclick={currentSlide(3)}></span>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>What we offer</h3>
+                    <div class="paragraph">
+                        <p>1. Play music, make calls, get directions or check your schedule simply by using your voice. Just
+                            say “Hey Siri” to activate your favourite personal assistant and stay on top of everyday tasks.
+                        </p>
+                        <p>2. Features like Conversation Boost bring focus to voices directly in front of you. Headphone
+                            Accommodations amplify frequencies you may need to hear clearly.</p>
+                        <p>3. Siri can read your important messages or alerts as they arrive — and you can reply to messages
+                            with just your voice.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="search">
+                <input type="text" class="search-input" placeholder="Search">
+                <button class="btn btn-primary">search</button>
+            </div>
+            <div class="share">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+            <div class="links">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./products.html">Product</a>
+                <a href="./feature.html">Features</a>
+                <a href="./review.html">Review</a>
+            </div>
+        </section>
+        <script src="./script.js"></script>
+    </body>
+</html>
